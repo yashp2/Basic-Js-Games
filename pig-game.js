@@ -18,6 +18,9 @@ function newgame(){
     document.querySelector('#name--0').textContent=(prompt('Enter name of player 1'));
     document.querySelector('#name--1').textContent=(prompt('Enter name of player 2'));
     alert('Instructions\n1.The player who touches the score 100 first wins!\n2.If while rolling a dice..you roll a 1 ,your current score will become zero and the chance passes to the other player.\nEnjoy Playing!');
+    apref[0].classList.remove('player--winner');
+    apref[1].classList.remove('player--winner');
+    // apref[(ap+1)%2].classList.add('player--winner');
     scores[0]=0;scores[1]=0;
     doccs0.textContent=0;
     doccs1.textContent=0;
