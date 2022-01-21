@@ -29,6 +29,8 @@ function newgame(){
     docs1.textContent=0;
     currentscore=0;
     ap=0;
+    apref[0].classList.add('player--active');
+    apref[1].classList.remove('player--active');
     dice.classList.remove('hidden');
     document.querySelector('.btn--roll').classList.remove('hidden');
     document.querySelector('.btn--hold').classList.remove('hidden');
